@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함수</title>
+  </head>
+  <body>
+    <script>
+      //   function addNumber() {
+      //     var num1 = 2;
+      //     var num2 = 3;
+      //     var sum = num1 + num2;
+      //     alert("결과값:" + sum);
+      //   }
+      //   //   함수를 2번 호출합니다.
+      //   addNumber();
+      //   addNumber();
+      var count = 0;
+      //   함수호출
+      myFnc();
+      //   함수선언
+      function myFnc() {
+        count++;
+        document.write(`hello ${count}, </br>`);
+      }
+      mtFnc();
+      myFnc();
+      var theFnc = function(){
+        count++;
+        document.write(`bye ${count}, <br>`)
+      }
+      theFnc();
+    </script>
+  </body>
+</html>

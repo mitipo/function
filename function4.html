@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함수4</title>
+  </head>
+  <body id="theBody">
+    <script>
+      var num = 0;
+      function testFnc() {
+        num++;
+        document.write(`${num}, <br>`);
+        if (num == 10) return;
+        testFnc();
+      }
+      testFnc();
+    </script>
+  </body>
+</html>
